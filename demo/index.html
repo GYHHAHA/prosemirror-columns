@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset="utf8" />
+<title>Column demo</title>
+
+<style>
+  body {
+    max-width: 50em;
+    font-family: Georgia;
+  }
+
+  .ProseMirror-menubar-wrapper {
+    border: 1px solid silver;
+    outline: none;
+  }
+
+  .ProseMirror {
+    padding: 5px 15px;
+  }
+</style>
+
+<h1>Column demo</h1>
+
+<div style="display: none" id="content">
+  <h2>Example content</h2>
+  <div class="prosemirror-column-container">
+    <div class="prosemirror-column" style="width: 200px">
+      <p>paragraph</p>
+      <p>line 2</p>
+      <blockquote>
+        <p>blockquote 1</p>
+        <p>line 4</p>
+      </blockquote>
+    </div>
+    <div class="prosemirror-column" style="width: 200px"><p>another</p></div>
+    <div class="prosemirror-column" style="width: 200px">
+      <p>the third</p>
+    </div>
+  </div>
+</div>
+
+<div id="editor"></div>
+
+<script type="module" src="./demo.ts"></script>
